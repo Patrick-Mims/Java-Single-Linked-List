@@ -59,4 +59,26 @@ public class SingleLinkedList {
 
         return count;
     }
+
+    public boolean contains(String item) {
+       return (find(item) != null);
+    }
+
+    private Node find(String target)
+    {
+        Node position = head;
+
+        String itemAtPosition;
+
+        while(position != null) {
+            itemAtPosition = position.item;
+
+            if(itemAtPosition.equals(target))
+                return position;
+
+            position = position.node;
+        }
+
+        return null;
+    }
 }
