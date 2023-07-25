@@ -6,10 +6,13 @@ public class App {
         System.out.println( "Single LinkedList" );
 
         SingleLinkedList singleLinkedList = new SingleLinkedList();
+        GenericLinkedList<Entry> genericLinkedList = new GenericLinkedList<Entry>();
 
+        singleLinkedList.insertBeginning("Microsoft", 1);
         singleLinkedList.insertBeginning("Nvidia", 2);
         singleLinkedList.insertBeginning("Oracle", 3);
-        singleLinkedList.insertBeginning("Microsoft", 1);
+        singleLinkedList.insertBeginning("Apple", 4);
+        singleLinkedList.insertBeginning("Google",5);
 
         singleLinkedList.displayList();
 
